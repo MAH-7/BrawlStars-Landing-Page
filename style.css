@@ -27,12 +27,18 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 50%; /* Horizontally center the header */
+  transform: translateX(-50%); /* Adjust horizontally to center the header */
+  width: 100%;
   padding: 15px 8px;
   background: black;
   color: white;
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 header img {
