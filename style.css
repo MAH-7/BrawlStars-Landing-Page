@@ -181,6 +181,7 @@ main-1 .welcome {
 
   .sm-logo img {
     max-width: 10%;
+    min-width: 100px;
   }
 
   main img {
