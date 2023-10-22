@@ -20,6 +20,17 @@ body {
   min-height: 595px;
 }
 
+.sm-logo img {
+  width: 10%;
+  max-width: 10%;
+  min-width: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Adjust horizontally to center the header */
+  top: 6rem;
+  object-fit: contain;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
