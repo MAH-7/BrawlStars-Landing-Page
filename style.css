@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -102,7 +103,8 @@ main .card1 {
 }
 
 main .card2 {
-  padding: 20px 200px 20px 0%;
+  position: relative;
+  right: 12.4rem;
 }
 
 main > h3 {
@@ -176,11 +178,6 @@ main-1 .welcome {
   main .card1 {
     position: relative;
     right: 6rem;
-  }
-
-  main .card2 {
-    position: relative;
-    left: 6rem;
   }
 
   main-1 img {
