@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Russo One", sans-serif;
+  background: white;
+}
+
+.bg-img {
+  background-image: url(https://supercell.com/images/1a5b69311180a4a1c374e10556941f05/hero_bg_brawlstars.a385872a.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 595px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+header {
+  padding: 15px 8px;
+  background: black;
+  color: white;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header img {
+  grid-column: 1 / 7;
+}
+
+header nav {
+  grid-column: 7 / 13;
+  justify-self: end;
+}
+
+header nav a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 70px;
+}
+
+main img {
+  grid-column: span 6;
+}
+
+main .gameplay1 {
+  width: 100%;
+  position: relative;
+  right: 125px;
+}
+
+main .gameplay2 {
+  width: 100%;
+}
+
+main .welcome {
+  grid-column: 7 / 12;
+  align-self: center;
+  font-size: 18px;
+}
+
+main .welcome .download {
+  display: flex;
+  width: 20%;
+  gap: 10px;
+  position: relative;
+  top: 20px;
+}
+
+main > h2 {
+  grid-column: span 12;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2em;
+}
+
+main .card {
+  grid-column: span 6;
+  text-align: center;
+}
+
+main .card img {
+  width: 100%;
+}
+
+main .card1 {
+  padding: 20px 0 20px 200px;
+}
+
+main .card2 {
+  padding: 20px 200px 20px 0%;
+}
+
+main > h3 {
+  grid-column: span 12;
+  /* text-align: center; */
+  align-self: center;
+  padding: 15px 20px;
+  font-size: 0.8em;
+  border-radius: 6px;
+  background: #2d85f3;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+main-1 {
+  padding-top: 70px;
+}
+
+main-1 img {
+  grid-column: span 6;
+}
+
+main-1 .gameplay1 {
+  width: 100%;
+  position: relative;
+  right: 125px;
+  bottom: 30px;
+}
+
+.bg-img1 {
+  background-image: url(https://supercell.com/images/21f696d382b894ed8a35f8718be2d872/1681/bg_gamesocial_brawlstars.4762f735.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main-1 .welcome {
+  grid-column: 7 / 12;
+  align-self: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  header nav {
+    grid-column: 1 / 13;
+    justify-self: end;
+  }
+
+  header img {
+    grid-column: 1 / 13;
+    position: absolute;
+  }
+
+  main img {
+    grid-column: span 12;
+  }
+
+  main .welcome {
+    grid-column: 3 / span 8;
+    justify-self: center;
+  }
+
+  main .card {
+    grid-column: 1 / 13;
+  }
+
+  main .card1 {
+    position: relative;
+    right: 6rem;
+  }
+
+  main .card2 {
+    position: relative;
+    left: 6rem;
+  }
+
+  main-1 img {
+    grid-column: span 12;
+  }
+
+  main-1 .welcome {
+    grid-column: 3 / span 8;
+    justify-self: center;
+  }
+}
