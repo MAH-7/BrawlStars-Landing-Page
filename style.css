@@ -21,7 +21,7 @@ body {
 }
 
 .sm-logo img {
-  width: 10%;
+  width: auto;
   max-width: 10%;
   min-width: 100px;
   position: relative;
@@ -177,6 +177,10 @@ main-1 .welcome {
   header img {
     grid-column: 1 / 13;
     position: absolute;
+  }
+
+  .sm-logo img {
+    max-width: 10%;
   }
 
   main img {
