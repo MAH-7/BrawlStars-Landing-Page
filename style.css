@@ -170,20 +170,33 @@ main-1 .welcome {
 
   main img {
     grid-column: span 12;
+    order: 2;
+    margin-top: 1.5rem;
   }
 
   main .welcome {
     grid-column: 3 / span 8;
     justify-self: center;
+    order: 1;
+    margin-top: -2rem;
+  }
+
+  main > h2 {
+    order: 3;
   }
 
   main .card {
     grid-column: 1 / 13;
+    order: 4;
   }
 
   main .card1 {
     position: relative;
     right: 6rem;
+  }
+
+  main > h3 {
+    order: 5;
   }
 
   main-1 img {
