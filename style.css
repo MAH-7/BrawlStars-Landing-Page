@@ -12,6 +12,34 @@ body {
   background: white;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000000;
+  text-align: center;
+}
+
+.loader img {
+  animation: spin 2s linear infinite;
+  width: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#content {
+  display: none;
+}
+
 .bg-img {
   background-image: url(https://supercell.com/images/1a5b69311180a4a1c374e10556941f05/hero_bg_brawlstars.a385872a.webp);
   background-position: center center;
